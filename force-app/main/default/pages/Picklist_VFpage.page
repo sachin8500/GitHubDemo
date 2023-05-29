@@ -1,0 +1,51 @@
+<apex:page controller="Input_example">
+    <apex:sectionHeader title="Employee" subtitle="New Employee"/>
+    <apex:form >
+        <apex:pageblock title="Employee Registration">
+            
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save"/>
+                <apex:commandButton value="Cancel"/>
+                
+            </apex:pageBlockButtons>
+            
+            <apex:pageblocksection title="Basic Information" collapsible="false">
+                
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="lastName"/>
+                    <apex:inputText value="{!lastName}"/>               
+                </apex:pageblocksectionitem>
+                
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Pan Card"/>
+                    <apex:inputSecret value="{!pancard}"/>               
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="firstName"/>
+                    <apex:inputText value="{!firstName}"/>               
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Technology"/>
+                    <apex:selectCheckboxes value="{!course}">
+                        <apex:selectOption itemLabel="Admin" itemValue="Admin"/>
+                        <apex:selectOption itemLabel="Development" itemValue="Development"/>
+                    </apex:selectCheckboxes>               
+                </apex:pageblocksectionitem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="City"/>
+                    <apex:selectList size="1" value="{!city}">
+                        <apex:selectoption itemLabel="Hyd" itemValue="Hyd"/>
+                        <apex:selectoption itemLabel="Ban" itemValue="Ban"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Gender"/>
+                    <apex:selectRadio value="{!gender}">
+                        <apex:selectoption itemLabel="Male" itemValue="Male"/>
+                        <apex:selectoption itemLabel="Female" itemValue="Female"/>
+                    </apex:selectRadio>
+                </apex:pageBlockSectionItem>
+            </apex:pageblocksection>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

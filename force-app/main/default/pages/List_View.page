@@ -1,0 +1,27 @@
+<apex:page standardController="Account" recordSetVar="items">
+    <apex:form >
+        <apex:pageblock title="Account details">
+        <apex:pageblocktable value="{!items}" var="a">
+            <apex:column >
+            <apex:facet name="header"> <apex:inputCheckbox /> </apex:facet>
+                <apex:inputCheckbox />
+            </apex:column>/>
+             <apex:column value="{!a.name}"/>
+            <apex:column value="{!a.Industry}"/>
+            <apex:column value="{!a.phone}"/>
+            <apex:column value="{!a.Rating}"/>
+            <apex:column headerValue="Action">
+            <apex:commandButton value="Edit"/>
+            <apex:commandButton value="Delet"/>
+            </apex:column>/>	
+            
+            <apex:column headerValue="View">
+            <apex:commandLink value="PDF"/> &nbsp; | &nbsp;
+            <apex:commandLink value="Doc"/>
+            </apex:column>/>	
+            </apex:pageblocktable>
+        </apex:pageblock>
+        
+    </apex:form>
+    
+</apex:page>

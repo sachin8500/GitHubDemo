@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Greater of Three Numbers">
+        <lightning-input label="First Number" onchange={fn1}></lightning-input>
+        <lightning-input label="Second Number" onchange={fn2}></lightning-input>
+        <lightning-input label="Third Number" onchange={fn3}></lightning-input>
+        
+
+        <lightning-button label="Calculate" onclick={callme} variant="brand"></lightning-button> <br/>
+
+        ******************************GREATE NUMBER IS*******************************
+        <br/>
+
+        Greater Number is: {result}
+
+
+    </lightning-card>
+</template>

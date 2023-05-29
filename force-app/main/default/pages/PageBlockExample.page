@@ -1,0 +1,16 @@
+<apex:page >
+    <apex:sectionHeader title="Employee" subtitle="New Employee"/> >
+    <apex:pageBlock title="Employee" helpTitle="needHelp??" helpUrl="/apex/section_Header_Example">
+    
+    
+        Name: Sachin  <br/>
+        Age :35 <br/>
+        City: Pune
+        
+        
+    </apex:pageBlock>
+    
+    
+    
+    
+</apex:page>

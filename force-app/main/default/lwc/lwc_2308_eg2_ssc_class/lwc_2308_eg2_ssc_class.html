@@ -1,0 +1,14 @@
+<template>
+    <template if:true={contact.data} >
+        <lightning-datatable 
+        key-field="id" 
+        data={contact.data} 
+        columns={col}
+        onsave={handelSave}
+        draft-values ={draftValues}>
+        </lightning-datatable>
+        <template if:true={contact.error}>
+            this program giving me the error!!!
+        </template>        
+    </template>
+</template>

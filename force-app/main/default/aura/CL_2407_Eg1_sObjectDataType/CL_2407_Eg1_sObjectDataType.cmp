@@ -1,0 +1,33 @@
+<aura:component>
+   
+    <aura:attribute name="acc" type="account" default="{sObjectType:'Account'}"/>
+    <aura:attribute name="con" type="contact" default="{sObjectType:'Contact'}" />
+    
+    <lightning:layout>
+    	<lightning:layoutItem size="6" padding="aroung small">
+             <lightning:card title="Account Creation" iconName="standard:account" >
+        		<lightning:input label="Enter First Name" type="string" value="{!v.acc.Name}" />    
+    		</lightning:card>
+        	
+        </lightning:layoutItem>
+    
+    </lightning:layout>
+    
+    
+     <lightning:layout>
+    	<lightning:layoutItem size="6" padding="aroung small">
+            <lightning:card title="Contact Creation" iconName="utility:bug" >
+       			 <lightning:input label="Enter name" type="string" value="{!v.con.LastName}" />    
+    		</lightning:card>
+        
+        </lightning:layoutItem>
+    
+    </lightning:layout>
+    
+   
+    
+    
+    
+    
+    
+</aura:component>

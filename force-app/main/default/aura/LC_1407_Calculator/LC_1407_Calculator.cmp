@@ -1,0 +1,6 @@
+<aura:component>
+        <lightning:input type="number" label="Enter number" />
+    <lightning:input type="number" label="Enter number" />
+    <lightning:input type="sumbit" value="Add" />
+
+</aura:component>

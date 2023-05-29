@@ -1,0 +1,24 @@
+<aura:component >
+    
+    <lightning:card >
+        <aura:set attribute="footer">
+            <lightning:button label="Login" onclick= "{!c.callme}" class="btn"/>
+        </aura:set>
+        
+        <lightning:input label="User Name"/>
+        <lightning:input label="Password" />
+                
+    </lightning:card> 
+    <aura:if isTrue= "{!v.flag}" >
+        <div class="logo">
+            <img src="{!$Resource.logo}" height="150" width="250" />
+            
+        </div>
+        <div class="box">
+            Amount: {!v.pri} <br/>
+            Years: {!v.term} <br/>
+            Rate: {!v.rate} <br/>
+            Interest Acc: {!v.res} <br/>
+        </div>
+    </aura:if>   
+</aura:component>

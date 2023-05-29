@@ -1,0 +1,20 @@
+<template>
+    <div class="main slds-p-around_medium">
+    <lightning-layout>
+        <lightning-layout-item size="4">
+
+
+
+    <template if:true={viewData}
+    for:each={viewData} for:item="res">
+        <lightning-card key={res.Id} variant="Narrow"
+        title={res.Name} icon-name="standard:account"
+        >            
+        </lightning-card>     
+
+    </template>
+
+        </lightning-layout-item>
+    </lightning-layout>
+</div>
+</template>

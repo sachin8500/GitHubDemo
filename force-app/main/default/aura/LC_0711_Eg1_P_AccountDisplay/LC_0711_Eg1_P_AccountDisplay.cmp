@@ -1,0 +1,13 @@
+<aura:component controller ="CL_0711_CreateRetriveAcc">
+    <aura:attribute name="accounts" type="List" default="[]" />
+    <aura:attribute name="aculmns" type="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.callme}" />
+    <aura:handler name="sac" event= "c:LE_0711_Eg1_AccountCreationEvent" action="{!c.showme}"/>
+    
+    <div class="box">
+        <c:LC_0711_Eg1_C_AccountInput />
+    </div>
+    <br/> <br/> <br/>
+    <lightning:dataTable keyField="id" data="{!v.accounts}" columns="{!v.aculmns}" />
+     
+</aura:component>

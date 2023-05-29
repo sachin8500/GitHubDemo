@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="This is an Event Example">
+
+
+</aura:event>

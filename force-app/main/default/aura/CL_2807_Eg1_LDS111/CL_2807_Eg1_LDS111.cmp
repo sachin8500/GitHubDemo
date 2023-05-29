@@ -1,0 +1,10 @@
+<aura:component >
+	
+    <aura:attribute name="acc" type="Account" default="{sobjectType:'Account'}" />
+    
+    <lightning:card title="Account" iconName="utility:bug">
+        <lightning:input label="Account Name" value="{!v.Name}" />
+        <lightning:input label="Account Phone" value="{!v.Phone}" />
+    	
+    </lightning:card>
+</aura:component>

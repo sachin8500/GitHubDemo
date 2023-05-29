@@ -1,0 +1,20 @@
+<aura:component >
+    <aura:attribute name="num1" type="integer" />
+    <aura:attribute name="num2" type="integer" />
+    <aura:attribute name="num3" type="integer" />
+    <aura:attribute name="result" type="integer" />
+    
+    <lightning:card title="Calculator" iconName="utility:add">
+        <lightning:input label="Enter First Number" value="{!v.num1}" />
+        <lightning:input label="Enter Second Number" value="{!v.num2}" />
+        <lightning:input label="Enter Third =Number" value="{!v.num3}" />
+        
+    Result===> {!v.result}
+        
+        <aura:set attribute="actions">  
+            <lightning:button label="Calutate" variant="brand" onclick="{!c.cal}"/>                       
+            <lightning:button label="Clear" variant="destructive" onclick="{!c.clr}"/>
+        </aura:set>
+        
+    </lightning:card>
+</aura:component>

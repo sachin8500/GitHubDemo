@@ -1,0 +1,6 @@
+<aura:component >
+    <lightning:button label="Create Another Button" onclick="{!c.createme}" />
+    
+    <p> Clicking on above button will create another button Dynamically </p>
+    {!v.body}
+</aura:component>

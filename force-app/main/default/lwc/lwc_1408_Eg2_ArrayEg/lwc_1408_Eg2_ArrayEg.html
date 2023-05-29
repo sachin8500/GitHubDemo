@@ -1,0 +1,17 @@
+<template>
+    ==================================First Way Using for:each==========================================
+<template for:each={cities} for:item=ea>
+        
+        <p key={ea}>{ea}</p>
+</template>
+
+==================================Second Way using Iterator=============================================
+<template iterator:item={cities}>
+    <p key={item.value}>{item.value}</p>
+</template>
+==================================Third Way Using JSON values==========================================<p></p>
+
+Employee Name:{employee.name} <p></p>
+Employee Age:{employee.age} <p></p>
+Employee City:{employee.city} <p></p>
+</template>

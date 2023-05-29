@@ -1,0 +1,12 @@
+<aura:component controller="CL_0708_Eg1_ApplicationEvent">
+	
+    <aura:attribute name="oppp" type="Opportunity[]" />
+    <aura:attribute name="col" type="List" />
+    
+    <aura:handler event="c:LE_0708_Eg1_ApplicationEvent" action="{!c.getOpp}" />
+    <lightning:card title="Opportunities" iconName="standard:opportunity">
+        <lightning:dataTable keyField="id" data="{!v.oppp}" columns="{!v.col}" />
+       
+    
+    </lightning:card>
+</aura:component>

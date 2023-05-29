@@ -1,0 +1,19 @@
+<template>
+    <lightning-record-edit-form
+        record-id={recordId}
+        object-api-name="Contact"
+    >
+        <lightning-card title="Record Edit form">
+            <lightning-input-field field-name="FirstName"></lightning-input-field>
+            <lightning-input-field field-name="LastName"></lightning-input-field>
+            <lightning-input-field field-name="Phone"></lightning-input-field>
+            <lightning-input-field field-name="Email"></lightning-input-field>
+
+            <lightning-button label="Clear" variant="destructive" onclick={clearme}>
+
+            </lightning-button>
+
+        </lightning-card>
+
+    </lightning-record-edit-form>
+</template>

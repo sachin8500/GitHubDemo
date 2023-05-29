@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Data table" icon-name="stadard:account">
+        <template if:true={contact.data}>
+            <lightning-datatable 
+                key-field="Id"
+                data={contact.data}
+                columns={col}            
+            >
+            <template if:true={contact.error}>
+                <!--Program incase system give error back-->
+                
+            </template>
+
+
+            </lightning-datatable>
+
+            
+        </template>
+
+    </lightning-card>
+    
+</template>

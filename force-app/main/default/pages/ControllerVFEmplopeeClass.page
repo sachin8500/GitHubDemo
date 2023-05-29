@@ -1,0 +1,6 @@
+<apex:page controller="VFEmplopeeClass">
+    
+    Name:{!Name} <br/>
+    salary:{!salary}<br/>
+    exp:{!exp}
+</apex:page>

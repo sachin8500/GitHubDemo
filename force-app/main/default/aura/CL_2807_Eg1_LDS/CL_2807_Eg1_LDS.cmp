@@ -1,0 +1,43 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <lightning:layout>
+        
+    	<lightning:layoutItem size="4" padding="around-small">
+        	<lightning:card title="Record View Form">
+            
+    			<lightning:recordViewForm recordId="{!v.recordsId}" objectApiName="Account">
+    	 			<lightning:outputField fieldName="Name" />
+        			<lightning:outputField fieldName="Phone" />
+       				<lightning:outputField fieldName="Rating" />    
+    				</lightning:recordViewForm>
+            </lightning:card>
+        </lightning:layoutItem>
+        
+        
+        <lightning:layoutItem size="4" padding="around-small">
+        	<lightning:card title="Record Edit Form">
+       	 	<lightning:recordEditForm recordId="{!v.recordsId}" objectApiName="Account" >
+            	<lightning:inputField fieldName="Name" />
+        		<lightning:inputField fieldName="Rating" />
+       			<lightning:outputField fieldName="Phone" />  	            
+            </lightning:recordEditForm>
+        </lightning:card>
+       
+        </lightning:layoutItem>
+        
+        <lightning:layoutItem size="4" padding="around-small">
+        	<lightning:card title="Record Form">
+            	<lightning:recordForm recordId="{!v.recordsId}" objectApiName="Account" layoutType="Full" mode="readonly">
+					                
+                </lightning:recordForm>
+            </lightning:card>
+        </lightning:layoutItem>
+        
+    
+    </lightning:layout>
+    
+    
+    
+    
+    
+</aura:component>

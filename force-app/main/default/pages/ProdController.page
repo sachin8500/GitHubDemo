@@ -1,0 +1,7 @@
+<apex:page controller="ProdInfoVFPage">
+    
+    prodName:{!prodName}<br/>
+    price:{!price}<br/>
+    qty:{!qty}
+    
+</apex:page>

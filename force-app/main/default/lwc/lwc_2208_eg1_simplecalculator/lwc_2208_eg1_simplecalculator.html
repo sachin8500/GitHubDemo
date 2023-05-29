@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+
+        <div slot="footer">
+            <lightning-badge> label={res}</lightning-badge>
+        </div>
+
+        <lightning-input type="number" value="firstnumber" name="fnum" 
+        label="First Number" onchange={calme}></lightning-input>
+    
+        <lightning-input type="number" value="secondnumber" name="snum" 
+        label="Second Number" onchange={calme}></lightning-input>
+
+       Result: {res}
+        
+
+    </lightning-card>
+   
+</template>

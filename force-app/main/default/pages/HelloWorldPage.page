@@ -1,0 +1,6 @@
+<apex:page >
+
+    <apex:sectionHeader title="Employee" subtitle="New Emp" help="/apex/HelloWorldPage" description="This is my page"/>
+
+    
+</apex:page>

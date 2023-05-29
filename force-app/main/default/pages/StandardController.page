@@ -1,0 +1,28 @@
+<apex:page standardController="Contact">
+    
+    
+    <apex:sectionHeader title="Contact" subtitle="New Contact" help="/apex/section_Header_Example"/>
+    <apex:form >
+        
+        <apex:pageblock title="Contact">
+            
+            <apex:pageBlockButtons location="Top">
+                <apex:commandButton value="Save"/>
+                <apex:commandButton value="Cancel"/>                
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection title="Basic Info">	
+                
+                <apex:inputField value="{!Contact.LastName}" />
+                <apex:inputField value="{!Contact.Email}"/>
+                <apex:inputField value="{!Contact.Firstname}"/>
+                <apex:inputField value="{!Contact.MobilePhone}"/>
+                <apex:inputField value="{!Contact.Phone}"/>
+                <apex:inputField value="{!Contact.OwnerId}" />                
+            </apex:pageBlockSection>      
+            
+        </apex:pageblock>
+        
+        
+    </apex:form>
+</apex:page>

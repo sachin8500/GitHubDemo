@@ -1,0 +1,32 @@
+<aura:component controller="CL_0711_LT_getAccSearchText">
+    <aura:attribute name="acc" type="Account[]" />
+    <aura:attribute name="st" type ="String" />
+    
+    <aura:attribute name="columns" type ="List" />
+    <aura:handler name="init" value="{!this}" action="{!c.loadMe}" />
+
+    <lightning:card>
+    	<aura:set attribute="title">
+        	<lightning:layout>
+            	<lightning:layoutItem size="2">
+                    <lightning:input label="Enter the search text: " value="{!v.st}" />
+                    
+                   
+                
+                </lightning:layoutItem>
+                
+                <lightning:layoutItem size="2">
+                    <lightning:button label="Search" onclick="{!c.searchMe}" />
+                </lightning:layoutItem>
+            
+            </lightning:layout>
+        </aura:set>
+    	<aura:if isTrue="{!v.acc.length>0}"> 
+         <lightning:dataTable keyField="id" data="{!v.acc}" columns= "{!v.columns}" hideCheckBoxColumn="true" />
+       
+        </aura:if>
+        
+    </lightning:card>
+    
+	
+</aura:component>

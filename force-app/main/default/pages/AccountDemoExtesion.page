@@ -1,0 +1,21 @@
+<apex:page standardController="Account" extensions="AccountDemoExtesion_CX">
+    
+    <apex:form >
+        <apex:pageBlock title="Account">
+            
+            <apex:pageBlockSection title="New Account">
+                
+              <apex:inputField value="{!account.name}"/>  
+              <apex:inputField value="{!account.Rating}"/>
+              <apex:inputField value="{!account.AccountNumber}"/>
+                <apex:inputField value="{!account.SLA__c}"/>
+            
+            </apex:pageBlockSection>
+            <apex:pageblockButtons Location="Bottom">
+            <apex:commandButton value="Save me" action="{!save}"/>
+            </apex:pageblockButtons>
+        
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

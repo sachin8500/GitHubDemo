@@ -1,0 +1,20 @@
+<template>
+<lightning-layout>
+    <lightning-layout-item size="4">
+        <lightning-card title="Contact List">
+            <div class="box">    
+                <template if:true={viewData}>
+                        <template for:each={viewData}
+                        for:item="res"
+                        >
+                            <p key={res.Id}> {res.Name} </p>
+            
+                        </template>
+                </template>
+            </div>
+        </lightning-card>
+    </lightning-layout-item>
+</lightning-layout>
+    
+ 
+</template>

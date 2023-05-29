@@ -1,0 +1,30 @@
+<apex:page controller="Calculator_VFpage">
+    <apex:form >
+        <apex:pageblock title="Calculator">
+            
+            <apex:pageBlockButtons location="top">
+            <apex:commandButton value="Add" action="{!add}" />
+            <apex:commandButton value="Mul" action="{!mul}" />
+            <apex:commandButton value="Cancel" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection columns="1">
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Enter Aval"/>
+                    <apex:inputText value="{!aval}"/>
+                </apex:pageblocksectionitem>
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="Enter Bval"/>
+                    <apex:inputText value="{!bval}"/>
+                </apex:pageblocksectionitem>
+                
+                <apex:pageblocksectionitem >
+                    <apex:outputLabel value="result"/>
+                    <apex:inputText value="{!cval}"/>
+                </apex:pageblocksectionitem>
+                
+            </apex:pageBlockSection> 
+        </apex:pageblock>
+    </apex:form>
+    
+</apex:page>

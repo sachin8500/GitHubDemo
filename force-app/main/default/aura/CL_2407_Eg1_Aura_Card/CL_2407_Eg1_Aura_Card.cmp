@@ -1,0 +1,19 @@
+<aura:component>
+    <lightning:card title="Account" iconName="standard:account">
+        <aura:set attribute="title">
+            Account <br></br>
+            <b>Sachin</b>   
+           &nbsp; <lightning:buttonIcon iconName="utility:hierarchy" alternativeText="test" size="xx small"/>
+        </aura:set>     
+    	<aura:set attribute="actions">
+        
+            <lightning:button iconName="utility:add" label="Follow" variant="brand-outline"/>
+            
+            <lightning:button label="Patient777" variant="brand-outline"/> <br></br>
+            
+                </aura:set>
+        &nbsp; &nbsp; &nbsp; Type  &nbsp;  &nbsp; &nbsp; Phone  &nbsp;   &nbsp; &nbsp; Website
+    
+    </lightning:card>
+    
+</aura:component>

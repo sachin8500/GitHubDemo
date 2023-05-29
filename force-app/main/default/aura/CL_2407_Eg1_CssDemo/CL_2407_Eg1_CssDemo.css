@@ -1,0 +1,46 @@
+.THIS.myHeading 
+{	
+    font-size:40px;
+    color:blue;
+    margin-left:500px;
+}
+
+.THIS.input 
+{	
+   	width:500px;
+    height:250px;
+    margin-left:470px;
+}
+
+.THIS.img 
+{	
+   	width:800px;
+    height:500px;
+    margin-left:330px;
+}
+
+.THIS .inputfield
+{	
+   	font-size:20px;
+    color:blue;
+    padding-left:20px;
+    padding-right:20px;
+}
+.THIS .result
+{	
+    margin-left:25px;
+   	padding-top:15px;
+    color:red;
+}
+
+.THIS .mybt1
+{	
+   	font-size:15px;
+    color:white;
+}
+
+.THIS .mybt2
+{	
+   	font-size:15px;
+    color:white;
+}

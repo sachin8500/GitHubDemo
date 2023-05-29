@@ -1,0 +1,24 @@
+<apex:page standardController="Contact" recordSetVar="ListCon">
+    
+    <apex:form >
+    
+        <apex:pageBlock title="Account and Contacts">
+        
+            <apex:pageblocksection title="Account an Contact Records">
+              <apex:pageBlockTable value="{!ListCon}" Var="Con">
+                <apex:column value="{!Con.Name}"/>
+                  <apex:column value="{!Con.Phone}"/>
+                  <apex:column value="{!Con.email}"/>
+                  <apex:column value="{!Con.account.rating}"/>
+                  <apex:column value="{!Con.account.name}"/>
+                  <apex:column value="{!Con.account.AccountNumber}"/>
+                  
+                </apex:pageBlockTable>  
+            </apex:pageblocksection>
+        </apex:pageBlock>
+    
+    </apex:form>
+	
+  
+    
+</apex:page>

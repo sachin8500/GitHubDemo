@@ -1,0 +1,17 @@
+<aura:component >
+    <aura:attribute name="name" type="string" default="Sachin"/>
+    <aura:attribute name="age"  type="integer" default="35" />
+    <aura:attribute name="salary" type="decimal" default="100000" />
+    
+    <lightning:card title="Employee datails" iconName="utility:bug">
+    <b> Employee Name: {!v.name} </b> <br></br>
+    <b>Employee Age: {!v.age}</b><br></br>
+    <b> Employee Salary: {!v.salary} </b><br></br>
+      <aura:set attribute="actions">
+        <lightning:button label="Next Employee" onclick="{!c.nxt}" variant="brand"/>
+        <lightning:button label="clear" onclick="{!c.clr}" variant="Destructive" />
+    </aura:set>
+    </lightning:card>
+    
+  
+</aura:component>

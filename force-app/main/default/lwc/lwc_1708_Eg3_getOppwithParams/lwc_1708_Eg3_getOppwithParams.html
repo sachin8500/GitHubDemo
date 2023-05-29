@@ -1,0 +1,13 @@
+<template>
+<div style="background-color:aqua" class="slds-p-around_medium">
+
+<lightning-input class="slds-m-around_medium" type="text" variant="standard" name="name" 
+label="Enter you Opportunity Name" onchange={callme}></lightning-input>
+
+    <template if:true={showData} 
+    for:each= {showData} for:item="res">
+<lightning-card key={res.id} variant="Narrow" title={res.Name} icon-name="standard:opportunity">
+</lightning-card>
+</template>
+</div>
+</template>

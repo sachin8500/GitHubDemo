@@ -1,0 +1,20 @@
+<aura:component controller="CL_2407_Eg1_CallApexClass">
+    
+    <aura:attribute name="name" type="String" />
+    <aura:attribute name="phone" type="String" />
+    <aura:attribute name="message" type="String" />
+    
+    <lightning:card title="Create Account" iconName="standard:account" >
+        
+        <lightning:input label="Enter first name" type="string" value="{!v.name}" />
+        <lightning:input label ="Enter phone number" type="string" value="{!v.phone}" />
+        
+        <aura:set attribute="actions">
+            <lightning:button label="Save" onclick="{!c.saveme}" variant="brand"/>
+            <lightning:button label="Clear" onclick="{!c.clearme}" variant="destructive" />
+        </aura:set>
+        Response : {!v.message}
+    </lightning:card>   
+    
+    
+</aura:component>

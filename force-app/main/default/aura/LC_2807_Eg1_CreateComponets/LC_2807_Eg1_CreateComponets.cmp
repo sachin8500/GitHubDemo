@@ -1,0 +1,12 @@
+<aura:component >
+    
+    <lightning:card title="Create Components">
+        <lightning:button label="Click Here" variant="brand" onclick="{!c.calme}"/>
+        <lightning:button label="Clear" variant="brand" onclick="{!c.clearme}"/>
+    </lightning:card>
+	
+    *******************Created  Dynamic Components******************
+    
+    {!v.body}
+    
+</aura:component>

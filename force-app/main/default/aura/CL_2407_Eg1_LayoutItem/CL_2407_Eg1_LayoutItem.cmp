@@ -1,0 +1,38 @@
+<aura:component >
+	
+    <lightning:layout>
+        
+		<lightning:layoutItem size="4">
+            <lightning:card title="My Buttons1" class="card1" >
+                	<lightning:button label="Button 1" variant="brand"/>
+               	</lightning:card>
+        </lightning:layoutItem>  
+        
+        
+        <lightning:layoutItem size="4">
+            	<lightning:card title="My Buttons2">
+                	<lightning:button label="Button 2" variant="brand"/>
+               	</lightning:card>
+        </lightning:layoutItem> 
+        
+        
+        <lightning:layoutItem size="4">
+            	<lightning:card title="My Buttons3">
+                	<lightning:button label="Button 3" variant="brand"/>
+               	</lightning:card>
+        </lightning:layoutItem> 
+        
+        
+        <lightning:layoutItem size="4">
+            	<lightning:card title="My Buttons4">
+                	<lightning:button label="Button 4" variant="brand"/>
+               	</lightning:card>
+        </lightning:layoutItem> 
+        
+    </lightning:layout>
+    
+    
+    
+    
+    
+</aura:component>

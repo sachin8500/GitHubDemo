@@ -1,0 +1,19 @@
+<apex:page standardController="Account" recordSetVar="myData">
+    <br/><br/>
+    <apex:form >
+        
+        <apex:dataTable value="{!myData}" var="a" width="500" border="2px">
+            <apex:column value="{!a.name}"/>
+            <apex:column value="{!a.industry}"/>
+            <apex:column value="{!a.phone}"/>
+        </apex:dataTable>
+         <br/><br/>
+        <apex:dataTable value="{!myData}" var="a" width="500" cellpadding="10" border="1px">
+            <apex:column value="{!a.name}"/>
+            <apex:column value="{!a.industry}"/>
+            <apex:column value="{!a.phone}"/>
+        </apex:dataTable>
+    </apex:form>
+    
+    
+</apex:page>

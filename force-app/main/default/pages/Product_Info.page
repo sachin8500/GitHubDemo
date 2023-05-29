@@ -1,0 +1,10 @@
+<apex:page >
+    <apex:sectionHeader title="Products" subtitle="New Procuct" help="/apex/section_Header_Example" description="Product page"/>
+
+    Product Name= Dell<br/><br/>
+    Qualntity:60 <br/><br/>
+    Unitprice:45000 <br/><br/>
+    Tax:4500 <br/><br/>
+    Total:49500 <br/><br/>
+    
+</apex:page>

@@ -1,0 +1,32 @@
+<aura:component >
+		
+    <aura:attribute name="pri" type="Decimal" />
+    <aura:attribute name="term" type="Decimal" />
+    <aura:attribute name="int" type="Decimal" />
+    <aura:attribute name="result" type="Decimal" />
+    
+      <img src="{!$Resource.hdfc}" class="img"/>
+     <div class="myHeading">
+     	<b> Welcome to HDFC bank!</b>
+    </div>
+     	
+    <div class="input"> 
+    
+		<lightning:card title="EMI Calculator">
+            <lightning:input label="Enter the Principle Amount" value="{!v.pri}" class="inputfield"/>
+            <lightning:input label="Enter the Term" value="{!v.term}" class="inputfield" />
+            <lightning:input label="Enter the Rate of Interest" value="{!v.int}" class="inputfield" />    
+    	
+    	    
+ 
+    <aura:set attribute="actions">
+        	<lightning:button label= "Calculate" variant="brand" onclick="{!c.cal}" class="mybt1"/>
+            <lightning:button label= "Clear" variant="destructive" onclick="{!c.clr}" class="mybt1"/>
+            </aura:set>
+             <div class="result">
+        	<b> Monthly EMI Is :  {!v.result} </b>
+            </div>
+        </lightning:card>
+    </div> 
+      
+</aura:component>

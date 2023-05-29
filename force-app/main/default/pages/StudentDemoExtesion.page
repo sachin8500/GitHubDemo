@@ -1,0 +1,23 @@
+<apex:page standardController="Student__c" recordSetVar="ListStud" extensions="StudentDemoExtesion3_cx">
+
+<apex:form >
+
+    <apex:pageBlock title="Student">
+    
+        <apex:pageBlockSection title="Student Details">
+        
+                   
+            <apex:pageBlockTable value="{!ListStud}" var="Stud">
+            <apex:column value="{!Stud.name}"/>
+            <apex:column value="{!Stud.Age__c}"/>
+            <apex:column value="{!Stud.Gender__c}"/>
+            <apex:column value="{!Stud.Spouse_Name__c}"/>
+        </apex:pageBlockTable>  
+            </apex:pageblocksection>
+        </apex:pageBlock>
+    
+    </apex:form>
+    
+  
+    
+</apex:page>

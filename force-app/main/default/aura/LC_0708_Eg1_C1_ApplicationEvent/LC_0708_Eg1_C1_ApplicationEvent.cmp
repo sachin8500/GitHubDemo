@@ -1,0 +1,16 @@
+<aura:component controller="CL_0708_Eg1_ApplicationEvent">
+	
+    <aura:attribute name="accnn" type="String" />
+    <aura:attribute name="accin" type="String" />
+    <aura:registerEvent name="nickname" type="c:LE_0708_Eg1_ApplicationEvent" />
+    
+    <lightning:card title="Account Search" iconName="standard:account" />
+    <lightning:input label="Enter Account Name" type="text" value="{!v.accnn}" />
+    <lightning:input label="Enter Account Insustry" type="text" value="{!v.accin}" />
+
+    
+    <lightning:button label="Search" variant="brand" onclick="{!c.callme}" />
+
+    <lightning:button label="Clear" variant="brand" onclick="{!c.clearme}" />
+    
+</aura:component>

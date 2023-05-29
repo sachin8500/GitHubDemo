@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="User Infomation form"> 
+
+    
+    <lightning-input label="Name" type="text" name="name" onchange={callme} ></lightning-input>
+    <lightning-input label="Email" type="email" name="email" onchange={callme} ></lightning-input>
+    <lightning-input label="Password" type="password" name="password" onchange={callme} ></lightning-input>
+
+<lightning-button label="Submit" variant="brand" onclick={clickme}></lightning-button>
+
+    <div class="bond" if:true={showres}><p></p>
+        Name: {name}<p></p>
+        Email:{email}<p></p>
+        Password:{password}<p></p>
+    </div>
+</lightning-card>
+
+    
+</template>

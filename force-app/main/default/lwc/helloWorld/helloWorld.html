@@ -1,0 +1,36 @@
+<template>
+<lightning-card>
+    <h1>
+        {sampleText}
+    </h1>    
+
+    <div>
+        <p>Employee Name: {employee.Name}</p>
+        <p>Employee Age: {employee.Age}</p>
+        <p>Employee Salary: {employee.Salary}</p>
+        <p>Employee Bane: {getEmpBand}</p>
+
+    </div>
+
+    <table class="slds-table slds-table_boardred">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Salary</td>
+            </tr>
+        </thead>
+        <tbody>
+            <template for:each={employeeList} for:item="emp">
+                <tr key={emp.code}>
+                    <td>{emp.Name}</td>
+                    <td>{emp.Age}</td>
+                    <td>{emp.Salary}</td>
+                </tr>
+
+            </template>
+
+        </tbody>
+    </table>
+</lightning-card>
+</template>

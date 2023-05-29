@@ -1,0 +1,12 @@
+<aura:component controller="CL_0708_Eg1_ApplicationEvent">
+	
+    <aura:attribute name="dataa" type="Contact[]" />
+    <aura:attribute name="col" type="List" />
+    
+    <aura:handler event="c:LE_0708_Eg1_ApplicationEvent" action="{!c.getContact}" />
+    <lightning:card title="Contacts" iconName="utility:bug">
+        <lightning:dataTable keyField="id" data="{!v.dataa}" columns="{!v.col}" />
+       
+    
+    </lightning:card>
+</aura:component>

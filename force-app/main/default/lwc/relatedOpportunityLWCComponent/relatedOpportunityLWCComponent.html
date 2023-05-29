@@ -1,0 +1,33 @@
+<template>
+
+    <lightning-button variant="brand" 
+                      label={buttonLabel} 
+                      onclick={handleClick}>
+    </lightning-button>
+
+<template if:true={isDatatableVisible}> 
+
+    <lightning-card title="Oppotunity Records" icon-name="standard:account">
+
+   <lightning-input type="search" 
+                     class="slds-p-around_x-small"
+                     onchange={handleChange}
+                     label="Search Opportunity Name"
+                     value={searchKey}
+                     placeholder="type here...">
+    </lightning-input>
+
+   
+
+        <lightning-datatable
+            key-field="Id"
+            data={dataList}
+            show-row-number-column
+            columns={columns}
+            onrowselection={handleSelectedRow}>
+        </lightning-datatable>
+
+    </lightning-card>
+
+    </template>
+</template>

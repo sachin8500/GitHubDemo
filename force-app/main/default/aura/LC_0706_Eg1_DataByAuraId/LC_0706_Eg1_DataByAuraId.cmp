@@ -1,0 +1,19 @@
+<aura:component >
+    
+    <lightning:card title ="Employee Details:">
+        
+        <aura:set attribute="actions"> 
+            <lightning:buttongroup>
+                <lightning:button label="Submit" onclick="{!c.callme}" variant="success"/>  
+            </lightning:buttongroup>
+            
+        </aura:set>
+        
+        <lightning:input label="enter employee name" aura:id="empname" type="name"/>
+        <lightning:input label="enter employee age" aura:id="empage" type="number"/>
+        <lightning:input label="enter employee salary" aura:id="empsal" type="decimal"/>
+        
+    </lightning:card>
+    
+    
+</aura:component>

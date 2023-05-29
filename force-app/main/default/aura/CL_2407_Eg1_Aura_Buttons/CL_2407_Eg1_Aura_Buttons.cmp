@@ -1,0 +1,88 @@
+<aura:component >    
+    <lightning:button label="Submit" />
+    
+    <lightning:button label="Submit" variant="brand"/>
+    <lightning:button label="Submit" variant="brand-outline"/>
+    
+    <lightning:button label="Submit" variant="base"/>
+    <lightning:button label="Submit" variant="neutral"/>
+    
+    <lightning:button label="Submit" variant="destructive"/>
+    <lightning:button label="Submit" variant="destructive-text"/>
+    
+    <lightning:button label="Submit" variant="inverse"/>
+    <lightning:button label="Submit" variant="success"/> <br/> <br/>
+    
+    <lightning:buttonIcon iconName="utility:activity" alternativeText="Submit" />
+    <lightning:buttonIcon iconName="utility:activity" alternativeText="Submit" variant="brand"/>
+    <lightning:buttonIcon iconName="utility:activity" alternativeText="Submit" variant="container"/>
+    
+    <lightning:button iconName="utility:activity" label="Submit" variant="success"/>
+    <lightning:button iconName="utility:activity" label="Submit" iconPosition="right" variant="success"/> 
+    <br/> <br/>
+    <br/> <br/>
+    
+    <lightning:buttonMenu alternativeText="Hii">
+        <lightning:menuItem label="Java" value="Java" />
+        <lightning:menuItem label="SFDC" value="sfdc" />
+        <lightning:menuItem label="C#" value=".net" />    
+    </lightning:buttonMenu>
+    
+    <br/> <br/>
+    <br/> <br/>
+    
+    
+      <lightning:buttonMenu alternativeText="Hii">
+          <lightning:menuSubheader label="Opps Tech"/>
+          		<lightning:menuItem label="Java" value="Java" />
+            	<lightning:menuItem label="C#" value=".net" />   
+          
+        
+          <lightning:menuSubheader label="Apex Tech"/>
+        	<lightning:menuItem label="SFDC" value="sfdc" />
+                    
+    </lightning:buttonMenu>
+    <br/> <br/>
+    <br/> <br/>
+    <lightning:button iconName="utility:add" label="Follow" variant="neutral"/>
+    
+    <lightning:buttonGroup>
+        
+     	<lightning:button label="Patient777" variant="neutral"/>
+    	<lightning:button label="New Contact" variant="neutral"/>
+    	<lightning:button label="New Case" variant="neutral"/>
+    	<lightning:buttonMenu alternativeText="text">
+        
+    	<lightning:menuItem label="Edit" value="e"/>
+    	<lightning:menuItem label="Delete" value="d"/>
+    	<lightning:menuItem label="Create" value="c"/>
+        </lightning:buttonMenu>
+    </lightning:buttonGroup>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+</aura:component>

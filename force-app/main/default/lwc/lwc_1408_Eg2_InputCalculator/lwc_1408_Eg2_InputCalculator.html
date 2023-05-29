@@ -1,0 +1,22 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item size="4">
+            <lightning-card title="Calculator">
+                <lightning-input type="number" label="Enter First Number" name="aval" onchange={callme} ></lightning-input>
+                <lightning-input type="number" label="Enter Second Number" name="bval" onchange={callme} ></lightning-input>
+        
+                <lightning-button label="Add" onclick={addme} variant="brand"></lightning-button>
+                <lightning-button label="Subract" onclick={subme} variant="destructive"></lightning-button>
+                <lightning-button label="Multiply" onclick={mulme} variant="base"></lightning-button>
+            </lightning-card>
+        </lightning-layout-item>
+
+    </lightning-layout>
+    
+        <br/>
+        <br/> <p></p> 
+        <p></p>
+    Result : {resvalue}
+
+    
+</template>

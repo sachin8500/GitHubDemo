@@ -1,0 +1,21 @@
+<aura:component >
+    
+    <Lightning:card title = "Calculator By Id">
+        
+        <aura:set attribute = "footer">
+            
+            <lightning:buttonGroup>
+                <lightning:button label="Add" onclick="{!c.Callme}" aura:id="add"/>
+                <lightning:button label="Subtract" onclick="{!c.Callme}" aura:id="sub"/>
+                <lightning:button label="Multiply" onclick="{!c.Callme}" aura:id="mul"/>
+            </lightning:buttonGroup>   
+            
+        </aura:set> 
+         
+        <lightning:input label="Enter the First number" aura:id="aval"/>
+        <lightning:input label="Enter the Second number" aura:id="bval"/>
+        <lightning:input label="the result" aura:id="res"/>	
+        
+    </Lightning:card>
+    
+</aura:component>

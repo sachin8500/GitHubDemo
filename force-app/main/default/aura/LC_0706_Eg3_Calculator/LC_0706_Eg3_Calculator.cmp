@@ -1,0 +1,21 @@
+<aura:component >
+    <aura:attribute name="aval" type="integer"/>
+    <aura:attribute name="bval" type="integer"/>
+    <aura:attribute name="result" type="integer"/>
+    
+    <lightning:card title="Calculator" iconName="standard:account">
+        
+        <aura:set attribute = "actions">
+            <lightning:buttonGroup>
+                <lightning:button label="Add" onclick="{!c.addme}" variant="success"/>
+                <lightning:button label="Subtract" onclick="{!c.subme}"/>
+                <lightning:button label="Multiply" onclick="{!c.mulme}"/>
+            </lightning:buttonGroup>
+            
+        </aura:set> 
+        <lightning:input label="Enter the first number" value="{!v.aval}"/>
+        <lightning:input label="Enter the Second number" value="{!v.bval}"/>
+        <lightning:input label="the result" value="{!v.result}"/>
+    </lightning:card>
+    
+</aura:component>

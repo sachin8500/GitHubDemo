@@ -1,0 +1,47 @@
+<template>
+
+    <lightning-button variant="brand" 
+                    label={buttonLabel} title="Contact Records" 
+                    onclick={handleClick}>
+    </lightning-button>
+
+    <template if:true={isDataTableVisible}>
+    <lightning-card title="LWC DataTable">
+        <lightning-input type="search" class="slds-p-around_x_small" variant="standard" 
+                            onchange={handleChange}
+                            name="name" label="Search Contact Name"
+                            value={searchKey} 
+                            placeholder="type here...">
+        </lightning-input>
+
+<!--<section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
+<div class="slds-modal__container">
+<button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse">
+<svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+<use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+</svg>
+<span class="slds-assistive-text">Cancel and close</span>
+</button>
+<div class="slds-modal__header">
+<h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Show Contacts</h1>
+</div>
+<div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+
+</div>
+
+</div>
+</section>
+<div class="slds-backdrop slds-backdrop_open" role="presentation"></div>--->
+
+        <lightning-datatable
+            key-field="Id"
+            data={contactData}
+            show-row-number-column
+            columns={columns}
+            onrowselection={handleSelectedRow}>
+        </lightning-datatable>
+       
+    </lightning-card>
+ </template>
+    
+</template>

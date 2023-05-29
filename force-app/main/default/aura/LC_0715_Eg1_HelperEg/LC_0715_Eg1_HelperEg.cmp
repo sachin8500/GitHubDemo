@@ -1,0 +1,19 @@
+<aura:component >
+    
+    <aura:attribute name="msg1" type="string" />
+    <aura:attribute name="msg2" type="string" />
+    <aura:attribute name="msg3" type="string" />
+    <aura:attribute name="msg4" type="string" />
+    
+    <lightning:card title="Helper Example">
+    <lightning:button label="Good Morning" variant="brand" onclick="{!c.gm}" />
+    <lightning:button label="Good Night" variant="destructive" onclick="{!c.gn}" />
+    </lightning:card>
+    
+    ***********************msg****************************<br></br>
+    
+    Message 1: {!v.msg1} <br></br>
+    Message 2: {!v.msg2} <br></br>
+    Message 3: {!v.msg3} <br></br>
+    Message 4: {!v.msg4} <br></br>
+</aura:component>

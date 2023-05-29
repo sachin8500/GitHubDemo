@@ -1,0 +1,6 @@
+<apex:page controller="StudVFClass">
+    Name: {!Name} <br/>
+    branch:{!branch}<br/>
+    phone:{!phone}
+
+</apex:page>

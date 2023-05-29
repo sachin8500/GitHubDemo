@@ -1,0 +1,41 @@
+<aura:component controller="CL_0708_LT_CreateAccount">
+    
+    <aura:attribute Name="name" type = "String" />
+    <aura:attribute Name="phone" type = "String" />
+    <aura:attribute Name="rating" type = "String" />
+    <aura:attribute Name="industry" type = "String" />
+    <aura:attribute Name="result" type = "String" />
+    <aura:attribute Name="flag" type="boolean" default = "false" />
+    
+    
+    <lightning:card title="Account Creation" >
+        <aura:set attribute="actions">
+            <lightning:button label="Create Acc" onclick="{!c.callme}" />
+        </aura:set>
+        <lightning:layout>
+            <lightning:layoutItem size="6" padding="around-small">
+                <lightning:input label= "Account Name" value ="{!v.name}" />
+                <lightning:input label= "Account Phone" value ="{!v.phone}" />
+                <lightning:input label= "Account Rating" value ="{!v.rating}" />
+                <lightning:input label= "Account Industry" value ="{!v.industry}" />
+                
+                
+            </lightning:layoutItem>
+            
+            <aura:if isTrue="{!v.flag}">
+                <lightning:layoutItem size="6" padding="around=small">
+                    Account Name Entered is : {!v.name} <p></p>
+                    Account Phone Entered is : {!v.phone} <p></p>
+                    Account Rating Entered is : {!v.rating} <p></p>
+                    Account Industry Entered is : {!v.industry} <p></p>
+                    Result msg : {!v.result} <p></p>
+                    
+                    
+                </lightning:layoutItem>
+                
+            </aura:if>
+            
+        </lightning:layout>
+    </lightning:card>
+    
+</aura:component>
